@@ -107,7 +107,7 @@ position: fixed;
     border-right: 6px solid white;
     width: 90%;
     padding: 12px;
-    height: 51px;
+   /* height: 51px;*/
     color: white;
     font-family: cairo;
     text-align: center;
