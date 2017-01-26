@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+
+</head>
+<body>
+<audio controls autoplay>
+
+  <source src="http://95.154.202.117/stream.mp3?ipport=95.154.202.117_25735" type="audio/aac" />
+  <source src="http://95.154.202.117/stream.mp3?ipport=95.154.202.117_25735" type="audio/mpeg" />
+        </audio>
+<script>
+(function() {
+
+    var currentSound;
+    // I have a div called "page"
+    var soundcv = document.body;
+
+    // This only works for one sound for simplicity's sake
+    function playSound(sound){
+
+        if (currentSound == null){
+            var audio = document.createElement('audio');
+            audio.src = sound;
+            soundcv.appendChild(audio);
+            currentSound = audio;
+        }
+
+        currentSound.play();
+    }
+
+    // This isn't a real audio file URL - replace it with one of your own
+    playSound('http://example.com/example.mp3');
+})();
+</script>
+                <script type="text/javascript" src="http://95.154.202.117/listen2myradio1/player.js?v=1396700438"></script>
+
+</body>
+</html>
